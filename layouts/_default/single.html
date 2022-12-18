@@ -29,5 +29,10 @@
 			{{ end }}
 		</div>
 	</article>
+	{{ template "partials/comments.html" . }}
 </main>
+{{ end }}
+
+{{/* By default this theme has no comments - but users can add a partial if they want to define some. */}}
+{{ define "partials/comments.html" }}
 {{ end }}
