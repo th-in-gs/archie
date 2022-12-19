@@ -60,4 +60,7 @@
 	<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
 	{{- end }}
 	{{- end }}
+	{{- range .Site.Params.headLinks }}
+		<link rel="{{ .rel }}" href="{{ .href }}" />
+	{{- end }}
 </head>
